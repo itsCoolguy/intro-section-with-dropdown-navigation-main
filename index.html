@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/icons/favicon-32x32.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap" rel="stylesheet">
+    
+    <title>Frontend Mentor | Intro section with dropdown navigation</title>
+  </head>
+  <body>
+      <header>
+        <img src="./images/logo.svg" alt="snap-logo" id="logo">
+        <button id="menu-button" onclick="openMenu()">
+          <img src="./images/icons/icon-menu.svg" alt="menu-icon" id="menu-icon">
+        </button>
+        <div id="desktop-buttons">
+
+          <div id="main-desktop-buttons">
+            <button id="desktop-features-button" onclick="openDesktopFeatures()">
+              <span id="desktop-features-span" class="desktop-button-span">
+                Features
+                <img src="./images/icons/icon-arrow-down.svg" alt="down arrow" class="dropdown-arrow">
+                <img src="./images/icons/icon-arrow-up.svg" alt="up arrow" class="dropup-arrow">
+                <div id="features-dropdown-desktop" class="dropdown">
+                  <ul>
+                    <li><img src="./images/icons/icon-todo.svg" class="dropdown-item-icon"/><p>Todo List</p></li>
+                    <li><img src="./images/icons/icon-calendar.svg" class="dropdown-item-icon"/><p>Calendar</p></li>
+                    <li><img src="./images/icons/icon-reminders.svg" class="dropdown-item-icon"/><p>Reminders</p></li>
+                    <li><img src="./images/icons/icon-planning.svg" class="dropdown-item-icon"/><p>Planning</p></li>
+                  </ul>
+                </div>
+              </span>
+              
+            </button>
+            <button id="desktop-company-button" onclick="openDesktopCompany()">
+              Company
+              <img src="./images/icons/icon-arrow-down.svg" alt="down arrow" class="dropdown-arrow">
+              <img src="./images/icons/icon-arrow-up.svg" alt="up arrow" class="dropup-arrow">
+              <div id="company-dropdown-desktop" class="dropdown">
+                <ul>
+                  <li>History</li>
+                  <li>Our team</li>
+                  <li>Blog</li>
+                </ul>
+              </div>
+            </button>
+            <button id="desktop-careers-button">Careers</button>
+            <button id="desktop-about-button">About</button>
+          </div>
+
+          <div id="desktop-login-buttons">
+            <button id="desktop-login-button">Login</button>
+            <button id="desktop-register-button">Register</button>
+          </div>
+        </div>
+      </header>
+
+      <main>
+        <img src="./images/image-hero-mobile.png" alt="image-hero-mobile" id="main-image-mobile">
+
+        <div id="main-content">
+          <h1>Make remote work</h1>
+          <p id="main-paragraph">
+            Get your team in sync, no matter your location. Streamline processes, create team rituals, and
+            watch producivity soar.
+          </p>
+
+          <button id="learn-more-button">Learn more</button>
+
+          <footer>
+            <img src="./images/client-databiz.svg" alt="databiz-icon" id="databiz-icon">
+            <img src="./images/client-audiophile.svg" alt="audiophile-icon" id="audiophile-icon">
+            <img src="./images/client-meet.svg" alt="meet-icon" id="meet-icon">
+            <img src="./images/client-maker.svg" alt="maker-icon" id="maker-icon">
+          </footer>
+        </div>
+
+        <img src="./images/image-hero-desktop.png" alt="image-hero-desktop" id="main-image-desktop">
+      </main>
+
+      <div id="black-overlay"></div>
+
+      <div id="mobile-menu">
+        <button id="exit-mobile-menu-button" onclick="closeMenu()">
+          <img src="./images/icons/icon-close-menu.svg" alt="close menu" id="exit-image">
+        </button>
+        <div id="mobile-menu-main">
+          <button id="mobile-menu-features" onclick="openMobileFeatures()">
+            <span class="mobile-menu-dropdown-span">
+              Features
+              <img src="./images/icons/icon-arrow-down.svg" alt="down arrow" class="dropdown-arrow">
+            </span>
+            <div id="mobile-features-dropdown" class="mobile-dropdown">
+              <ul>
+                <li><img src="./images/icons/icon-todo.svg" class="dropdown-item-icon"/><p class="mobile-menu-p">Todo List</p></li>
+                <li><img src="./images/icons/icon-calendar.svg" class="dropdown-item-icon"/><p class="mobile-menu-p">Calendar</p></li>
+                <li><img src="./images/icons/icon-reminders.svg" class="dropdown-item-icon"/><p class="mobile-menu-p">Reminders</p></li>
+                <li><img src="./images/icons/icon-planning.svg" class="dropdown-item-icon"/><p class="mobile-menu-p">Planning</p></li>
+              </ul>
+            </div>
+          </button>
+          <button id="mobile-menu-company" onclick="openMobileCompany()">
+            <span class="mobile-menu-dropdown-span">
+              Company
+              <img src="./images/icons/icon-arrow-down.svg" alt="down arrow" class="dropdown-arrow">
+            </span>
+            <div id="mobile-company-dropdown" class="mobile-dropdown">
+              <ul>
+                <li><p class="mobile-menu-p">History</p></li>
+                <li><p class="mobile-menu-p">Our Team</p></li>
+                <li><p class="mobile-menu-p">Blog</p></li>
+              </ul>
+            </div>
+          </button>
+          <button id="mobile-menu-careers">Careers</button>
+          <button id="mobile-menu-about">About</button>
+        </div>
+        <div id="mobile-menu-login-buttons">
+          <button id="mobile-login-button">Login</button>
+          <button id="mobile-register-button">Register</button>
+        </div>
+      </div>
+    <script src="main_script.js"></script>
+  </body>
+</html>
